@@ -1,0 +1,90 @@
+.center{
+    text-align: center
+}
+
+.foodpage-style {
+    background-color:#f2dfb9;
+    color:#411900
+}
+
+/* Food pages css */
+.carousel-section{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    width:90vw;
+    margin: 5%;
+    background-color: none;
+    overflow-x:scroll;    
+}
+.carousel-div{
+    background-color:#eece9d;
+    display: flex;
+    flex-direction: column;
+    height:400px;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content:space-between;
+    margin: 10px;
+    min-width: 250px;
+    transition: transform 0.5s;    
+}
+.carousel-div:hover{
+    transform:scale(1.1)
+}
+.carousel-div img{
+    width:100px;
+    min-height:200px;
+    max-height:100px;
+    background-position: center center;
+    object-fit:cover;
+}
+
+.carousel-div img{
+    width: 90%;
+    height:auto;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.recipe-link{
+    position:absolute;
+    left:0;
+    bottom:0;
+}
+
+/* home page css */
+.graphic-section{
+    height: 200px;
+    margin: 5%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.hover-text{
+    text-align:center;
+    font-size:3vw;
+    display: none;
+}
+
+.food-graphic:hover .hover-text{
+    display:block
+}
+.home-style {
+    background-color: #ffabdf;
+    color: #411900;
+}
+
+@media screen and (max-width: 800px){
+    .carousel-section{
+       flex-direction: column;
+       margin:0 auto;
+       padding:100px;
+       width: 90vw
+
+    }
+    .carousel-div{
+        margin:20px;
+    }
+ }
+
